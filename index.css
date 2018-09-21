@@ -23,28 +23,8 @@ body {
   width: 100%;
 }
 
-.close {
-  display: flex;
-
-  cursor: pointer;
-  
-  align-items: center;
-  justify-content: center;
-  
-  background: black;
-  color: white;
-    
-  margin: 0;
-  padding: 0;
-  
-  position: absolute;
-  bottom: 0px;
-  right: 0px;
-
-  height: 60px;
-  width: 60px;
-}
-
+.close,
+.next,
 .prev {
   display: flex;
 
@@ -60,33 +40,32 @@ body {
   padding: 0;
   
   position: absolute;
-  bottom: 60px;
-  right: 0px;
 
   height: 60px;
   width: 60px;
+
+  transition: background .2s ease, transform .2s ease;
+}
+
+.prev:hover,
+.next:hover,
+.close:hover {
+  background: red;
+}
+
+.close {
+  bottom: 0px;
+  right: 0px;
+}
+
+.prev {
+  bottom: 60px;
+  right: 0px;
 }
 
 .next {
-  display: flex;
-
-  cursor: pointer;
-  
-  align-items: center;
-  justify-content: center;
-  
-  background: black;
-  color: white;
-    
-  margin: 0;
-  padding: 0;
-  
-  position: absolute;
   bottom: 120px;
   right: 0px;
-
-  height: 60px;
-  width: 60px;
 }
 
 .slick-slide {

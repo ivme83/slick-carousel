@@ -16,6 +16,7 @@ function ReplaceContentInContainer(id, content) {
 $(document).on('ready', function () {
     $('.slider').slick({
         variableWidth: true,
+        focusOnSelect: true,
         prevArrow: $('.prev'),
         nextArrow: $('.next')
     });
