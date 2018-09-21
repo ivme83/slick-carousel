@@ -9,8 +9,9 @@
 
 $(document).on('ready', function () {
     $('.slider').slick({
-        arrows: false,
-        variableWidth: true
+        variableWidth: true,
+        prevArrow: $('.prev'),
+        nextArrow: $('.next')
     })
 
     $('.left').click(function () {
